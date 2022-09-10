@@ -587,6 +587,7 @@ ol {
 }
 .div-h {
   display: block;
+  margin-right: 93px;
 }
 
 .link-footer-svg {
@@ -611,7 +612,80 @@ ol {
 .focus-footer-svg {
   fill: currentColor;
 }
-/* МОДАЛКА */
+/*==============ФОРМА ФУТЕРА============*/
+
+.foot-form-title {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: var(--therd-text-color);
+  margin-bottom: 20px;
+}
+
+.foot-form-email {
+  display: inline-block;
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+  color: var(--therd-text-color);
+  margin-right: 12px;
+}
+
+.foot-form-btn {
+  margin: 0 auto;
+  position: relative;
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--therd-text-color);
+  letter-spacing: 0.06em;
+  padding: 10px 62px 10px 28px;
+  cursor: pointer;
+transition: background-color var(--transition-dur-and-funk),
+  box-shadow var(--transition-dur-and-funk);
+}
+.foot-form-btn:hover,
+.foot-form-btn:focus {
+  background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.foot-form-main {
+  display: flex;
+  flex-direction: row;
+}
+
+.foot-form-title-div {
+  display: block;
+}
+
+.foot-form-btn-div {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+.foot-form-svg {
+  width: 24x;
+  height: 24px;
+  fill: var(--therd-text-color);
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+}
+
+/*=============== МОДАЛКА ================*/
 .backdrop {
   position: fixed;
   top: 0;
@@ -651,6 +725,11 @@ ol {
   background-color: var(--therd-text-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+}
+
+.modal-close-icon:hover,
+.modal-close-icon:focus {
+  fill: var(--accent-color);
 }
 /* ФОРМА МОДАЛКИ */
 
@@ -766,29 +845,33 @@ ol {
 .modal-form-checkbox:checked + .modal-form-icon .modal-form-icon-use {
   display: block;
 }
-.modal-form-checkbox:focus +.modal-form-icon{
+.modal-form-checkbox:focus + .modal-form-icon {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 1);
 }
 
 .modal-form-btn {
-    
-      padding: 10px 52px;
-      color: var(--therd-text-color);
-      background-color: var(--accent-color);
-      font-family: inherit;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 1.9;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      align-self: center;
-      letter-spacing: 0.06em;
-      cursor: pointer;
-      border-radius: 4px;
-      border: none;
-      min-width: 200px;
-      height: 50px;
-      transition: background-color var(--transition-dur-and-funk),
-        box-shadow var(--transition-dur-and-funk);
+  padding: 10px 52px;
+  color: var(--therd-text-color);
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  min-width: 200px;
+  height: 50px;
+  transition: background-color var(--transition-dur-and-funk),
+    box-shadow var(--transition-dur-and-funk);
+}
+.modal-form-btn:hover,
+.modal-form-btn:focus {
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
