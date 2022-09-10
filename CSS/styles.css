@@ -653,7 +653,7 @@ ol {
   cursor: pointer;
 transition: background-color var(--transition-dur-and-funk),
   box-shadow var(--transition-dur-and-funk);
-  
+  text-align: center;
   display: flex;
     align-items: center;
     text-align: center;
