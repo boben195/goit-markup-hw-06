@@ -653,6 +653,10 @@ ol {
   cursor: pointer;
 transition: background-color var(--transition-dur-and-funk),
   box-shadow var(--transition-dur-and-funk);
+  
+  display: flex;
+    align-items: center;
+    text-align: center;
 }
 .foot-form-btn:hover,
 .foot-form-btn:focus {
