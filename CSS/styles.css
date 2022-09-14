@@ -845,6 +845,7 @@ margin-bottom: 10px;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+  line-height: calc(24 / 14);
 }
 
 .modal-form-icon {
